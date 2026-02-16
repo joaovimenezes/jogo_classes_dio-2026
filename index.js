@@ -7,7 +7,7 @@
         constructor(name, age, type){
             this.name = name
             this.age = age
-            this.type = type
+            this.type = type.toLowerCase()
         }
         attack(){
             //dicionário de ataques por type
@@ -16,16 +16,17 @@
                 "guerreiro": "espada",
                 "monge": "marciais",
                 "ninja": "shuriken",
+                "goat": "bola de basquete",
             }
             if (!ataque[this.type]){
                 return "ERRO: Tipo não encontrado."
             }
-        return `${this.name}, o ${this.type}, atacou usando: ${ataque[this.type]}`
+        return `${this.name}, o ${this.type}, atacou usando: ${ataque[this.type]}.`
         }
     }
 
     // Defina aqui seu Heroi
-    let heroi = new Hero("Marcos Antônio", 15, "monge")
+    let heroi = new Hero("LeBron", 41, "GOAT")
 
 
     console.log(heroi.attack())
