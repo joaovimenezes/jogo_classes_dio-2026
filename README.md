@@ -13,7 +13,8 @@ Para a propriedade `type`, existem correspondentes para:
 - "guerreiro";
 - "mago";
 - "monge";
-- "ninja".
+- "ninja";
+- "goat".
 
 ### Como executar o código
 - Certifique-se de ter o Node.js para execução;
